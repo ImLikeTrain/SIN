@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3412/3412866.png" type="image/x-icon">
+    <title>Chargement...</title>
+</head>
+    <body >
+
+        <script>
+            function ChangeTitle() {
+                var title_1 = "Le sel"
+                var title_2 = "Version 2"
+                var act_title = document.querySelector("title").textContent;
+                var in_text =  document.querySelector("title");
+
+                if (act_title == title_1) {
+                    in_text.innerHTML = title_2
+                    act_title = title_2
+                }else{
+                    in_text.innerHTML = title_1
+                    act_title = title_1
+                }
+
+            }
+
+            setTimeout(setInterval(ChangeTitle, 1000),500)
+
+            var marg = 0
+
+            function Unclick(){
+                marg += 10
+                text = document.querySelector(".cant_click_me")
+                text.innerHTML = '<label class="cant_click_me" onmouseover="Unclick()" style="margin-left: '+marg+'%;">Source : Wikipedia</label>'
+                if (marg == 50) {
+                    marg = -50 
+                    text.innerHTML = '<label class="cant_click_me" onmouseover="Unclick()" style="margin-left: '+marg+'%;">Source : Wikipedia</label>'
+                }
+            }
+
+
+            </script>
+
+
+
+
+            <header style="margin-bottom: 10px;">
+                <h1>Le sel</h1>
+            </header>
+
+            <nav class="nav_class">
+                <h2>Nos sels</h2>
+                <a href="#">Gros sel</a> <br>
+                <a href="#">sel fin</a> <br>
+                <a href="#">produit dérivé</a> <br>
+            </nav>
+
+            <section class="section_1_class" style="margin-bottom: 10px;">
+                <h2>L'histoire du sel</h2>
+                <p>L'histoire du sel commence au moment où l'homme tente de s'impliquer dans la production effective de son alimentation et sa conservation en toutes saisons. Le sel, c'est-à-dire le sel ordinaire ou chlorure de sodium, est un cristal ionique comportant des ions sodium Na+ et des ions chlorure Cl−. Il est très important pour l'espèce humaine comme pour toutes les espèces vivantes. Chez l'homme, la carence en sel peut amener jusqu'au coma et à la mort1. En évoluant, chaque espèce s'est adaptée au taux de salinité de son milieu (c'est le cas des plantes ou des poissons, par exemple) ou à un niveau de disponibilité du sel (cas des animaux terrestres). Le sel permet de corriger un menu comportant essentiellement des végétaux. Comme aliment et agent de conservation il a facilité l'adoption de l'agriculture et de l'élevage et son utilisation s'est étendue à d'autres techniques typiques d'un mode de vie sédentaire (élaboration du cuir2, lustrage des poteries). C'est donc l'un des piliers des révolutions néolithiques et partant, des civilisations. Cependant le sel était souvent difficile à obtenir et cher3. Il a donc été l'objet d'un commerce important et parfois de taxations, ce qui entraînait une contrebande considérable. Il a aussi été utilisé comme monnaie et instrument de rites religieux, aspects qui ne sont pas évoqués dans l'article (voir : Sel alimentaire#Religion). Aujourd'hui, le sel est bon marché et presque partout disponible. Depuis le xixe siècle il est devenu une matière première incontournable pour les industries chimiques.</p>
+            </section>
+
+            <section class="section_2_class" style="margin-bottom: 10px;">
+                <h2>Comment est t-il récolté</h2>
+
+                    <img src="https://www.jydionne.com/wp-content/images/Consommation%20de%20sel%20selon%20CHR%20Hansen.png" alt="">
+
+                <p class="img_text">Le sel provient de deux sources principales : l'eau de mer et les mines de sel. On peut en rajouter une troisième plus rare : les sources salées terrestres. De façon plus marginale, depuis le néolithique, on a aussi produit du sel en brûlant des plantes halophytes comme la salicorne et en lavant les cendres pour récupérer les cristaux.L'extraction du sel, jusqu'à une époque récente était une occupation pénible et parfois dangereuse surtout dans les mines; « son extraction, longtemps synonyme de calvaire fut réservée aux esclaves, aux forçats, aux prisonniers de guerre</p>
+                <h2>Étymologie</h2>
+                <p >Dans presque toutes les langues indo-européennes sel dérive du même étymon indo-européen supposé : sal(d)4, ce qui peut être pris pour un signe de l'ancienneté de l'importance donnée au sel. En français, on cite en général l'origine latine sal5 (masculin). Cependant une origine celtique serait aussi probable : salo ou sala en gaulois4. Les Celtes sont en effet les premiers peuples à avoir porté l'exploitation du sel à un niveau industriel (Culture de Hallstatt) en Europe. Comme le gaulois sala, sel est féminin dans les langues régionales au sud de la Loire (Poitevin : la sau ou la sâ) et des Vosges ainsi que dans d'autres langues romanes5.</p>
+            </section>
+
+            <footer>
+                <label for="">Aucun droit réservé <br> Nathan Sabatier <br> <br> </label> <label class="cant_click_me" onmouseover="Unclick()" style="margin-left: 0%;">Source : Wikipedia</label>
+            </footer>
+
+
+
+
+
+
+    </body>
+</html>
